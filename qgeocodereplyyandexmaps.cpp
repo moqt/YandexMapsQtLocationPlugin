@@ -14,7 +14,7 @@
 
 static QGeoCoordinate constructCoordiante(const QString &strCoord) {
     QGeoCoordinate coord;
-    const auto slist = strCoord.split(',');
+    const auto slist = strCoord.split(' ');
     if (slist.size() == 2) {
         coord.setLongitude(slist[0].toDouble());
         coord.setLatitude(slist[1].toDouble());
